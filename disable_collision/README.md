@@ -6,7 +6,7 @@ Things I've learned:
 
 1) A `gz::sim::system` plugin can only be attachted to a world, model or sensor; not e.g. to a link (it is defined like that in the SDF specification).
 
-2) The 'physics' `gz::sim::system` plugin deals with the mapping between Entity Component Manager (ECM) entities (i.e. in `gz::sym`) and the corresponding physics simulation entities (i.e. `gz::physics`).
+2) The 'physics' `gz::sim::system` plugin deals with the mapping between Entity Component Manager (ECM) entities (i.e. in `gz::sim`) and the corresponding physics simulation entities (i.e. `gz::physics`).
  As it is a plugin, it has a `Configure` and `Update` method, during which entities are created or removed. However it currently [only supports removal of models](https://github.com/ejalaa12/gz-sim/blob/c03c43261094d3d78a3706df46d10dbede80a918/src/systems/physics/Physics.cc#L1880-L1885), not of sub-entities such as collision geometry.
 
 3) So removing the collision entity from the ECM does not change the physical behavior of the links unfortunately.
