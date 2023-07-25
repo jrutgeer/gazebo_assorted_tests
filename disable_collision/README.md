@@ -1,6 +1,7 @@
 
 
-This is a system plugin to delete a collision entity (and its components) after a certain time.
+This is a system plugin to delete a collision entity (and its components) after a certain time,
+in an attempt to answer [this question](https://community.gazebosim.org/t/i-want-to-delete-a-collision-of-a-certain-link-at-a-certain-point-in-time-during-the-simulation-run-how-can-i-implement-it-through-code/1983) on community.gazebosim.org.
 
 Things I've learned:
 
