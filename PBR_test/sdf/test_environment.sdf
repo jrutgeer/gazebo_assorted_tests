@@ -1,0 +1,63 @@
+<?xml version="1.0"?>
+<sdf version="1.9">
+  <model name="Test_environment">
+
+    <link name="Link">
+
+      <visual name="room">
+        <cast_shadows>false</cast_shadows>
+        <geometry>
+          <mesh>
+            <uri>file://meshes/test_environment.dae</uri>
+            <submesh>
+               <name>Cube</name>
+               <center>false</center>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0</diffuse>
+          <specular>1.0 1.0 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>file://textures/Cube_Bake1_PBR_Diffuse.png</albedo_map>
+              <roughness_map>file://textures/Cube_Bake1_PBR_Roughness.png</roughness_map>
+              <metalness_map>file://textures/Cube_Bake1_PBR_Metalness.png</metalness_map>
+              <normal_map>file://textures/Cube_Bake1_PBR_Normal.png</normal_map>
+              <light_map>file://textures/Cube_Bake1_PBR_Lightmap.png</light_map>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+
+
+      <visual name="Monkey">
+        <cast_shadows>false</cast_shadows>
+        <geometry>
+          <mesh>
+            <uri>file://meshes/test_environment.dae</uri>
+            <submesh>
+               <name>Suzanne</name>
+               <center>false</center>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0</diffuse>
+          <specular>1.0 1.0 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>file://textures/Suzanne_Bake1_PBR_Diffuse.png</albedo_map>
+              <roughness_map>file://textures/Suzanne_Bake1_PBR_Roughness.png</roughness_map>
+              <metalness_map>file://textures/Suzanne_Bake1_PBR_Metalness.png</metalness_map>
+              <normal_map>file://textures/Suzanne_Bake1_PBR_Normal.png</normal_map>
+              <light_map>file://textures/Suzanne_Bake1_PBR_Lightmap.png</light_map>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+
+    </link>
+
+  </model>
+</sdf>

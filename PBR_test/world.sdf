@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<sdf version="1.9">
+  <world name="test_environment">
+    <scene>
+      <ambient>0.5 0.5 0.5</ambient>
+      <grid>false</grid>
+      <origin_visual>true</origin_visual>
+    </scene>
+
+    <physics name="4ms" type="ignored">
+        <max_step_size>0.004</max_step_size>
+        <real_time_factor>1.0</real_time_factor>
+    </physics>
+
+    <include>
+      <uri>sdf/test_environment.sdf</uri>
+    </include>
+
+    <light name="Light" type="point">
+      <pose>1.055 -4.0762 5.9039 0 0 0</pose>
+      <diffuse>1 1 1 1</diffuse>
+      <specular>1 1 1 1</specular>
+      <intensity>1</intensity>
+      <attenuation>
+        <range>20</range>
+        <linear>1</linear>
+        <constant>0.35</constant>
+        <quadratic>0.05</quadratic>
+      </attenuation>
+      <cast_shadows>false</cast_shadows>
+      <visualize>false</visualize>
+    </light>
+
+  </world>
+</sdf>
