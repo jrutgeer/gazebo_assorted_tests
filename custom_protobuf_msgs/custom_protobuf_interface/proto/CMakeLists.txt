@@ -2,8 +2,7 @@
 
 # This was copied from the SubT Challenge repository:
 # https://github.com/osrf/subt/blob/master/subt-communication/subt_communication_broker/src/protobuf/CMakeLists.txt
-
-
+# Documentation was added, and slight changes were made to make it work for this standalone repository.
 
 include(${PROJECT_SOURCE_DIR}/cmake/Protobuf.cmake)
 
