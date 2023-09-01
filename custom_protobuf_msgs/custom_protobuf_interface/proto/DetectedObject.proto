@@ -1,0 +1,20 @@
+syntax = "proto3";
+package custom_protobuf_interfaces.msgs;
+
+import "gz/msgs/header.proto";
+import "gz/msgs/pose.proto";
+
+
+/// \brief DetectedObject message
+
+message DetectedObject
+{
+  /// Note that imported protos need their full package name!
+  gz.msgs.Header header = 1;
+
+  /// uid identifying the object type
+  uint32 object_uid = 2;
+
+  /// Pose of the object 
+  gz.msgs.Pose pose_object = 3;
+}
