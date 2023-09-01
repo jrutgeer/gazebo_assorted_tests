@@ -12,9 +12,12 @@ set(PROTO_MESSAGES
   DetectedObject.proto
 )
 
-# I think this generates the source files from the .proto file, and sets the ${PROTO_SOURCES},
-# ${PROTO_HEADERS}, etc. variables accordingly.
-# If required for your project, add extra import directories to import other custom message definitions.
+# See doc in above included Protobuf.cmake file:
+# This generates the source, header and descriptor files for proto
+# messages, and populates the ${PROTO_SOURCES}, ${PROTO_HEADERS} and
+# ${PROTO_DESCRIPTORS} variables.
+# If required for your project, add extra import directories to 
+# IMPORT_DIRS to import other custom message definitions.
 protobuf_generate_cpp_with_descriptor(
   PROTO_SOURCES
   PROTO_HEADERS
