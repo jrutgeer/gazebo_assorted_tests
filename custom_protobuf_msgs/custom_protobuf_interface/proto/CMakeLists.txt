@@ -29,7 +29,7 @@ protobuf_generate_cpp_with_descriptor(
 #   # Variables needed to propagate through modules
 #    # If more than one layer of cmake use CACHE INTERNAL ...
 #
-# But in any case:, the 'PARENT_SCOPE' statement causes that these variables get
+# But in any case: the 'PARENT_SCOPE' statement causes that these variables get
 # defined in the context of the CMakeLists.txt in the parent folder
 set(PROTOBUF_INCLUDE_DIRS ${PROTOBUF_INCLUDE_DIRS} PARENT_SCOPE)
 set(PROTOBUF_LIBRARIES ${PROTOBUF_LIBRARIES} PARENT_SCOPE)
