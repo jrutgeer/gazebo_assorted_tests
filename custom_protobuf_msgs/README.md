@@ -18,13 +18,13 @@ This example repository shows:
 
 The `custom_protobuf_interface` folder holds an example `.proto` file, as a mockup for an 'dectected object' message holding a header and the ID and pose of the detected object:
 
-- `gz.msgs.Header`,
-- `uint32`,
-- `gz.msgs.Pose`.
+- `gz.msgs.Header`
+- `uint32`
+- `gz.msgs.Pose`
 
 </br>
 
-In the main `CMakeLists.txt` file a target `custom_msg_lib` is defined (shared library `libcustom_msg_lib.so`).
+In the main `CMakeLists.txt` file, a target `custom_msg_lib` is defined (shared library `libcustom_msg_lib.so`).
 
 In the `proto` subfolder, another `CMakeLists.txt` generates the code for the `DetectedObject.proto` example message definition.
 
