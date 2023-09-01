@@ -10,12 +10,6 @@ This example repository shows:
    </br>
 2. How to **use** these custom messages in an independent repository.
 
-
-</br>
-
-Hopefully this example repository can help others to avoid also needing to spend more than a day to find out what exactly to put in the `CMakeLists.txt` files.&emsp;:-(
-
-</br>
 </br>
 
 # Overview
