@@ -14,7 +14,7 @@ Things I've learned:
 
 4) Possible alternatives:
 
-    1) Maybe collision bitmask functionality, see [this example](https://github.com/gazebosim/gz-physics/blob/gz-physics6/tpe/plugin/worlds/shapes_bitmask.sdf). Not sure if this can be updated online.
+    1) Maybe collision bitmask functionality, see [this example](https://github.com/gazebosim/gz-sim/blob/gz-sim7/examples/worlds/shapes_bitmask.sdf). Not sure if this can be updated online.
 
     2) Deleting and recreating the full model (at its current pose, twist, acceleration, etc) instead of only the collision entity,
 
@@ -26,7 +26,7 @@ Things I've learned:
 To test:
 
 - Compile with `colcon build` in the `disable_collsion` directory,
-- Export the plugin directory: `export GZ_SIM_SYSTEM_PLUGIN_PATH=`pwd`/build/disable_collision`
+- Export the plugin directory: ``export GZ_SIM_SYSTEM_PLUGIN_PATH=`pwd`/build/disable_collision``
 - Run the simulation: `gz sim src/disable_collision.sdf`
 
 
